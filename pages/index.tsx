@@ -66,7 +66,7 @@ export async function getServerSideProps(context) {
   const {collection} = await res.json()
 
   const res2 = await fetch('https://api.opensea.io/api/v1/bundles?on_sale=true&asset_contract_address=0x19b86299c21505cdf59ce63740b240a9c822b5e4&limit=20&offset=0', options)
-  const debug = await res.json()
+  const debug = await res2.json()
 
 
 
